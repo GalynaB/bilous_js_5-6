@@ -13,6 +13,7 @@ var go = 0;
 function startClick() {
 
   btnStart.innerHTML = 'Pause';
+  btnStart.style.backgroundColor = "#31B0D5";
 
   if (go == 0) {
 
@@ -51,6 +52,7 @@ function startClick() {
     clearInterval(timerId);
     go = 0;
     btnStart.innerHTML = 'Start';
+    btnStart.style.backgroundColor = "#E6E6E6";
   };
 };
 
@@ -61,4 +63,5 @@ function resetClick() {
   btnTimer.innerHTML = '00 : 00 : 00';
   forMsek.innerHTML = ' 000';
   btnStart.innerHTML = 'Start';
+  btnStart.style.backgroundColor = "#E6E6E6";
 };
